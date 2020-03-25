@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dataDunia"
+        android:icon="@drawable/worldinformation"
+        android:title="Data" />
+
+    <item
+        android:id="@+id/ringkasanDunia"
+        android:icon="@drawable/world"
+        android:title="Ringkasan" />
+
+    <item
+        android:id="@+id/ringkasanIndonesia"
+        android:icon="@drawable/indonesia"
+        android:title="Indonesia" />
+
+    <item
+        android:id="@+id/informasiCovid"
+        android:icon="@drawable/ic_info"
+        android:title="Informasi" />
+
+</menu>

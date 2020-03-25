@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context=".full_information.FullCoronaInformation">
+
+    <ImageView
+        android:id="@+id/waveColor"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_wave" />
+
+    <ImageView
+        android:id="@+id/arrowBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_arrow_back" />
+
+    <TextView
+        android:id="@+id/titleNegara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/arrowBack"
+        android:text="Negara"
+        android:textColor="@color/White"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="180dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/doctor_animation" />
+
+        <com.daasuu.bl.BubbleLayout
+            android:id="@+id/bubbleLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            app:bl_arrowDirection="left"
+            app:bl_arrowHeight="8dp"
+            app:bl_arrowPosition="150dp"
+            app:bl_arrowWidth="8dp"
+            app:bl_bubbleColor="@color/Orange"
+            app:bl_cornersRadius="30dp"
+            app:bl_strokeWidth="1dp">
+
+            <TextView
+                android:id="@+id/textViewBubble"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:textSize="16sp" />
+
+        </com.daasuu.bl.BubbleLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelative"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/radius_data_dunia"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleNegara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Negara"
+        android:textColor="@color/White"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/titleNegara"
+        android:src="@drawable/ic_information" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleNegara"
+        android:layout_marginTop="13dp">
+
+        <ImageView
+            android:id="@+id/imageConfirm"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/confirm" />
+
+        <TextView
+            android:id="@+id/jumlahConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@+id/imageConfirm"
+            android:maxLines="1"
+            android:textColor="@color/White"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageSembuh"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/sembuh" />
+
+        <TextView
+            android:id="@+id/jumlahSembuh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@+id/imageSembuh"
+            android:maxLines="1"
+            android:textColor="@color/White"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageKematian"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/jumlahKematian"
+            android:src="@drawable/dead" />
+
+        <TextView
+            android:id="@+id/jumlahKematian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="15dp"
+            android:maxLines="1"
+            android:textColor="@color/White"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
